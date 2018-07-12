@@ -1,5 +1,4 @@
-## B2C商城
-## Laravel5.5
+## Laravel5.5 B2C商城
 
 ### 功能如下图
 !['功能图'](/axbp3OpRZD.jpg)
