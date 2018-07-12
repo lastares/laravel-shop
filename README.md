@@ -2,7 +2,7 @@
 ## Laravel5.5
 
 ### 功能如下图
-![](./axbp3OpRZD.jpg)
+!['功能图'](/axbp3OpRZD.jpg)
 
 #### 商城开发的技术知识点如下：
 
