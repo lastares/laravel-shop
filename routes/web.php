@@ -48,6 +48,9 @@ Route::group(['middleware' => 'auth'], function () {
         // 购物车移除商品
         Route::delete('cart/{sku}', 'CartController@remove')->name('cart.remove');
 
+        // 商品发货
+        Route::post('orders/{order}/received', 'OrdersController@received')->name('orders.received');
+
         // 下订单
         Route::post('orders', 'OrdersController@store')->name('orders.store');
 
@@ -64,6 +67,7 @@ Route::group(['middleware' => 'auth'], function () {
 
         // 微信支付
         Route::get('payment/{order}/wechat', 'PaymentController@payByWechat')->name('payment.wechat');
+
     });
 });
 // 支付宝服务端回调
