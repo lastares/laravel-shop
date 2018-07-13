@@ -68,6 +68,10 @@ Route::group(['middleware' => 'auth'], function () {
         // 微信支付
         Route::get('payment/{order}/wechat', 'PaymentController@payByWechat')->name('payment.wechat');
 
+        // 订单评价
+        Route::get('orders/{order}/review', 'OrdersController@review')->name('orders.review.show');
+        Route::post('orders/{order}/review', 'OrdersController@sendReview')->name('orders.review.store');
+
     });
 });
 // 支付宝服务端回调
