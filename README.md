@@ -46,7 +46,7 @@
 - laravel-admin 配置的备份与恢复；
 - 常见 Web 项目漏洞类型及在 Laravel 项目中的防御措施。
 
-### 后台首页
+### 前台首页
 !['前台商品列表'](/index-index.png)
 
 
