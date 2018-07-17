@@ -74,6 +74,9 @@ Route::group(['middleware' => 'auth'], function () {
 
         // 申请退款
         Route::post('orders/{order}/apply_refund', 'OrdersController@applyRefund')->name('orders.apply_refund');
+
+        // 优惠券
+        Route::get('coupon_codes/{code}', 'CouponCodesController@show')->name('coupon_codes.show');
     });
 });
 // 支付宝服务端回调
